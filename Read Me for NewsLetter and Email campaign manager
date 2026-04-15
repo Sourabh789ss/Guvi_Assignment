@@ -1,8 +1,10 @@
 📧 Newsletter & Email Campaign Manager API
+------------------------------------------------
 
 A secure backend API for managing mailing lists, creating email campaigns, and scheduling email delivery. This project simulates email sending using logs instead of real email integrations.
 
 🚀 Features
+-----------------
 🔐 User Authentication & Authorization (JWT-based)
 📬 Mailing List Management
 📝 Create, update, and manage email campaigns
@@ -10,15 +12,21 @@ A secure backend API for managing mailing lists, creating email campaigns, and s
 ⏰ Schedule email campaigns (simulated)
 📊 Campaign status tracking (e.g., DRAFT, SENT)
 🔍 Pagination and filtering for campaigns
+
 🧩 Functional Requirements
+-----------------------------
 1. Authentication
+
 User registration & login
 Secure authentication using JWT
 Password encryption using BCrypt
+
 2. Mailing List Management
+
 Create mailing lists
 Add/remove subscribers
 Manage subscriber details
+
 3. Campaign Management
 
 Users can:
@@ -27,14 +35,18 @@ Create and edit campaigns
 Link campaigns to mailing lists
 Define subject, content, and schedule
 Update campaign status (e.g., SENT)
+
 4. Email Sending (Simulation)
+
 Campaigns are "sent" using logs
 No real email service required
 Helps test scheduling & workflow
 5. Query Features
 View all campaigns with pagination
 Filter campaigns by status
+
 🛠️ Tech Stack
+--------------
 Backend
 Java
 Spring Boot
@@ -45,7 +57,9 @@ JWT Authentication
 BCrypt Password Encryption
 Database
 (Add your DB here: MySQL / PostgreSQL / H2)
+
 📁 Project Structure
+----------------------
 src/
  ├── controller/
  ├── service/
@@ -54,25 +68,34 @@ src/
  ├── dto/
  ├── config/
  └── security/
+
 🔐 Authentication Flow
+------------------------
 User registers
 User logs in → receives JWT token
 Token is used in headers for protected APIs
 Authorization: Bearer <your_token>
+
 📌 API Endpoints (Sample)
+---------------------------
 Auth
+-----
 POST /api/auth/register
 POST /api/auth/login
 Mailing List
 POST   /api/lists
 GET    /api/lists
 POST   /api/lists/{id}/subscribers
+
 Campaigns
+---------
 POST   /api/campaigns
 GET    /api/campaigns
 PUT    /api/campaigns/{id}
 POST   /api/campaigns/{id}/send
+
 ⚙️ Setup & Installation
+-------------------------
 1. Clone the repository
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
@@ -91,22 +114,18 @@ jwt.secret=YOUR_SECRET_KEY
 3. Build and run
 mvn clean install
 mvn spring-boot:run
-🧪 Testing
 
+🧪 Testing
+------------
 You can test APIs using:
 
 Postman
 Swagger (if integrated)
+
 📊 Future Improvements
+-------------------------
 Integrate real email service (SendGrid / AWS SES)
 Add campaign analytics (open rate, click rate)
 UI dashboard (React / Angular)
 Scheduler with cron jobs
-🤝 Contributing
 
-Contributions are welcome!
-
-Fork the repo
-Create a new branch
-Commit your changes
-Submit a PR
