@@ -3,6 +3,7 @@ Inventory & Order Management System
 Inventory & Order Management System is a robust backend RESTful API designed to manage complex inventory levels, process customer orders, and streamline warehouse operations. Built with Spring Boot, it features secure authentication and automated documentation.
 
 🚀 Features
+-------------
 Inventory Management: Real-time tracking of stock levels, product categories, and suppliers.
 
 Order Processing: Automated workflow for creating, updating, and managing customer orders.
@@ -14,6 +15,7 @@ Role-Based Access Control (RBAC): Granular permissions for Admin and Staff roles
 Interactive API Docs: Built-in Swagger UI and OpenAPI 3.0 integration for easy testing.
 
 🛠️ Tech Stack
+----------------
 Framework: Spring Boot 3.x
 
 Language: Java 17+
@@ -27,6 +29,7 @@ Documentation: Springdoc OpenAPI
 Build Tool: Maven
 
 📋 Prerequisites
+------------------
 JDK 17 or higher
 
 Maven 3.6+
@@ -34,6 +37,7 @@ Maven 3.6+
 MS SQL Server instance
 
 🛡️ Security Implementation
+------------------------------
 The system uses a custom JwtFilter to intercept requests. To access protected endpoints, include the token in your request header:
 
 Key Components:
@@ -43,6 +47,7 @@ SecurityConfig: Configures the SecurityFilterChain to permit public access to Au
 JwtUtil: Handles token generation, extraction, and validation using the HS256 algorithm.
 
 📖 API Documentation
+-----------------------
 Once the application is running, you can explore and test the endpoints visually:
 
 Swagger UI: http://localhost:8081/swagger-ui/index.html
@@ -50,6 +55,7 @@ Swagger UI: http://localhost:8081/swagger-ui/index.html
 OpenAPI JSON: http://localhost:8081/v3/api-docs
 
 🛤️ Roadmap
+------------
 [ ] Integration with Email Service for Order Confirmations
 
 [ ] Dashboard for Inventory Analytics
@@ -57,6 +63,7 @@ OpenAPI JSON: http://localhost:8081/v3/api-docs
 [ ] Multi-warehouse Support
 
 📂 Project Structure
+--------------------------
 StockFlow/
 ├── src/
 │   ├── main/
@@ -73,6 +80,7 @@ StockFlow/
 
 
 🧠 Key Concepts Demonstrated
+-------------------------------
 REST API design
 CRUD operations
 Layered architecture (Controller → Service → Repository)
