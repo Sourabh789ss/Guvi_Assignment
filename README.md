@@ -1,4 +1,5 @@
 Inventory & Order Management System
+-------------------------------------
 Inventory & Order Management System is a robust backend RESTful API designed to manage complex inventory levels, process customer orders, and streamline warehouse operations. Built with Spring Boot, it features secure authentication and automated documentation.
 
 🚀 Features
